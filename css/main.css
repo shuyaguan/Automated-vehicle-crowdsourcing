@@ -1,4 +1,4 @@
-/* 基础样式重置 */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
     overflow: hidden;
     }
     
-    /* 地图容器 */
+
     #map {
     position: absolute;
     top: 0;
@@ -23,7 +23,7 @@
     height: 100vh;
     }
     
-    /* 控制面板样式 */
+
     .cyberpunk-panel {
     position: absolute;
     background: rgba(11, 26, 47, 0.9);
@@ -45,7 +45,7 @@
     min-width: 200px;
     }
     
-    /* 标记列表样式 */
+
     .marker-list {
     margin-top: 20px;
     max-height: 400px;
@@ -68,7 +68,7 @@
     background: rgba(0, 255, 255, 0.2);
     }
     
-    /* 表单样式 */
+
     .cyberpunk-form {
     position: absolute;
     top: 50%;
@@ -113,7 +113,7 @@
     resize: vertical;
     }
     
-    /* Select 特定样式 */
+
     .cyberpunk-select {
     width: 100%;
     padding: 10px 35px 10px 10px;
@@ -128,7 +128,7 @@
     -moz-appearance: none;
     }
     
-    /* Description textarea styles */
+
     .cyberpunk-textarea {
     background: rgba(0, 0, 0, 0.7) !important;
     color: #fff !important;
@@ -167,7 +167,7 @@
     color: rgba(0, 255, 255, 0.3);
     }
     
-    /* 下拉箭头样式 */
+
     .cyberpunk-select {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300FFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -175,14 +175,14 @@
     background-size: 16px;
     }
     
-    /* Select 选项样式 */
+
     .cyberpunk-select option {
     background-color: rgba(11, 26, 47, 0.95);
     color: #fff;
     padding: 10px;
     }
     
-    /* 按钮容器 */
+
     .form-buttons {
     display: flex;
     justify-content: space-between;
@@ -190,7 +190,7 @@
     gap: 10px;
     }
     
-    /* 滚动条样式 */
+
     ::-webkit-scrollbar {
     width: 8px;
     }
@@ -205,7 +205,7 @@
     border-radius: 4px;
     }
     
-    /* 标记图标样式 */
+
     .marker-icon {
     width: 20px;
     height: 20px;
@@ -215,7 +215,7 @@
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
     }
     
-    /* 根据不同类型设置不同颜色 */
+
     .marker-icon.roadChange { background-color: #00FFFF; }
     .marker-icon.construction { background-color: #FF00FF; }
     .marker-icon.traffic { background-color: #FFFF00; }

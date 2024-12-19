@@ -8,7 +8,6 @@
     --glow-strong: 0 0 20px var(--neon-blue);
     }
     
-    /* 全局动画效果 */
     @keyframes neonGlow {
     0% { box-shadow: 0 0 5px var(--neon-blue); }
     50% { box-shadow: 0 0 20px var(--neon-blue); }
@@ -21,7 +20,6 @@
     100% { text-shadow: 0 0 5px var(--neon-blue); }
     }
     
-    /* 赛博朋克按钮样式 */
     .cyberpunk-button {
     background: transparent;
     border: 1px solid var(--neon-blue);
@@ -60,7 +58,7 @@
     box-shadow: var(--glow-purple);
     }
     
-    /* 赛博朋克面板样式 */
+
     .cyberpunk-panel {
     box-shadow: var(--glow);
     backdrop-filter: blur(5px);
@@ -82,7 +80,7 @@
     font-size: 24px;
     }
     
-    /* Select 下拉菜单样式 */
+ 
     .cyberpunk-select {
     appearance: none;
     -webkit-appearance: none;
@@ -159,7 +157,7 @@
     padding: 10px;
     }
     
-    /* 标记项目样式 */
+
     .marker-item {
     border: 1px solid var(--neon-blue);
     transition: all 0.3s ease;
@@ -183,13 +181,13 @@
     animation: animate 2s linear infinite;
     }
     
-    /* 动画效果 */
+ 
     @keyframes animate {
     0% { left: -100%; }
     50%, 100% { left: 100%; }
     }
     
-    /* 通知样式 */
+
     .notification-container {
     position: fixed;
     top: 20px;
@@ -218,7 +216,7 @@
     border-left-color: var(--neon-purple);
     }
     
-    /* 临时标记样式 */
+
     .marker-icon.temporary {
     animation: pulseGlow 1s infinite alternate;
     }

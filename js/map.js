@@ -1,20 +1,20 @@
-// Mapbox访问令牌
+
 const mapboxToken = 'pk.eyJ1IjoiZ3NodXlhIiwiYSI6ImNtMHk2bjRodTBrNmIya29obmc2OG5kZTUifQ.TM9gfDCRHU_yorUj8CQHSA';
 
-// 初始化地图
+
 mapboxgl.accessToken = mapboxToken;
 const map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/dark-v10',
-center: [-122.4194, 37.7749], // 旧金山坐标
+center: [-122.4194, 37.7749], 
 zoom: 12,
 minZoom: 2,
 maxZoom: 18
 });
 
-// 等待地图加载
+
 map.on('load', () => {
-// 添加交通流量图层
+
 map.addLayer({
 'id': 'traffic-flow',
 'type': 'line',
@@ -38,7 +38,7 @@ map.addLayer({
 }
 });
 
-// 添加3D建筑物图层
+
 map.addLayer({
 'id': '3d-buildings',
 'source': 'composite',
@@ -63,7 +63,7 @@ map.addLayer({
 }
 });
 
-// 添加道路网络图层
+
 map.addLayer({
 'id': 'road-network',
 'type': 'line',
@@ -85,7 +85,7 @@ map.addLayer({
 }
 });
 
-// 添加兴趣点标签
+
 map.addLayer({
 'id': 'poi-labels',
 'type': 'symbol',
@@ -109,7 +109,7 @@ map.addLayer({
 }
 });
 
-// 添加地铁线路
+
 map.addLayer({
 'id': 'transit-lines',
 'type': 'line',
@@ -126,14 +126,14 @@ map.addLayer({
 });
 });
 
-// 添加地图控件
+
 map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 map.addControl(new mapboxgl.ScaleControl({
 maxWidth: 100,
 unit: 'metric'
 }), 'bottom-left');
 
-// 图层切换功能
+
 document.addEventListener('DOMContentLoaded', () => {
 const layers = {
 'traffic-flow': 'traffic-flow-toggle',
@@ -153,10 +153,10 @@ map.setLayoutProperty(layerId, 'visibility', visibility);
 });
 });
 
-// 错误处理
+
 map.on('error', (e) => {
 console.error('Map error:', e.error);
 });
 
-// 导出地图实例
+
 window.map = map;
